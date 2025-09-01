@@ -1,6 +1,6 @@
 # AvantLumi Library
 
-**README Version 1.0.0** • **Revised: September 1, 2025** • **Author: AvantMaker** • **https://www.AvantMaker.com**
+**README Version 1.0.1** • **Revised: September 1, 2025** • **Author: AvantMaker** • **https://www.AvantMaker.com**
 
 *This project is proudly brought to you by the team at AvantMaker.com.*
 
@@ -19,10 +19,9 @@ Visit us at [AvantMaker.com](https://www.avantmaker.com) where we've crafted a c
 - **Solid Colors**: Support for over 80 named colors and RGB values
 - **Power Management**: Configurable voltage and current limits
 - **EEPROM Storage**: Save and restore LED configurations
-- **No Dependencies**: Works without MQTT or network requirements
 - **Easy Integration**: Simple API for quick setup and control
 
-Perfect for LED art projects, ambient lighting, holiday decorations, and any application requiring sophisticated LED control.
+Perfect for LED projects, ambient lighting, and any application requiring sophisticated LED control.
 
 ---
 
@@ -56,13 +55,12 @@ Perfect for LED art projects, ambient lighting, holiday decorations, and any app
 ## 📋 Requirements
 
 ### Hardware Requirements
-- **ESP32, Arduino Uno/Nano, or compatible microcontroller**
+- **ESP32 or compatible microcontroller**
 - **WS2812B LED strip** (or compatible addressable LEDs)
 - **Supported Data Pins**: 2, 3, 4, 5, 11, 12, 13 (easily expandable)
 
 ### Software Dependencies
 - **FastLED Library** (version 3.1.0 or higher)
-- **EEPROM Library** (usually included with Arduino core)
 
 > **Note**: FastLED version 3.1.0 or later is required. Check [FastLED GitHub](https://github.com/FastLED/FastLED) for the latest version.
 
@@ -238,16 +236,6 @@ String getPalette()   // Get current palette name
 The library currently supports the following data pins:
 - **Arduino/ESP32**: 2, 3, 4, 5, 11, 12, 13
 
-### Adding Custom Pins
-
-To add support for additional pins, modify the `begin()` method in `AvantLumi.cpp`:
-
-```cpp
-case YOUR_PIN_NUMBER:
-    FastLED.addLeds<WS2812B, YOUR_PIN_NUMBER, GRB>(leds, numLeds);
-    break;
-```
-
 ---
 
 ## 🔧 Advanced Examples
@@ -322,11 +310,6 @@ void loop() {
 ---
 
 ## ⚡ Performance & Memory
-
-### Memory Usage
-- **Base Library**: ~8KB program memory
-- **Per LED**: ~3 bytes RAM
-- **EEPROM Storage**: ~128 bytes
 
 ### Performance Tips
 1. **Optimize LED Count**: More LEDs require more RAM and processing
@@ -421,52 +404,14 @@ AvantLumi/
 ├── AvantLumi.h          # Header file with class definitions
 ├── AvantLumi.cpp        # Implementation file
 ├── examples/            # Example sketches
-│   ├── BasicUsage/
-│   ├── ColorCycling/
-│   ├── PaletteDemo/
-│   └── ConfigSaving/
 ├── README.md            # This file
 └── library.properties   # Arduino library metadata
 ```
-
----
-
-## 🔄 Version History
-
-- **v1.0.0** - Initial release with full feature set
-  - Color palettes and solid color support
-  - Brightness control with 5 levels
-  - EEPROM configuration saving
-  - Power management features
-  - JSON status reporting
-
----
-
-## 📞 Support & Community
-
-### Getting Help
-- **GitHub Issues**: Report bugs and request features
-- **AvantMaker.com**: Tutorials and documentation
-- **Community**: Share projects and get help
-
-### Contributing
-We welcome contributions! Please:
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
-
 ---
 
 ## 📜 License
 
 MIT License - See [LICENSE](LICENSE) for details.
-
----
-
-## 🏷️ Tags
-
-`led` `fastled` `ws2812b` `arduino` `esp32` `rgb` `lighting` `palette` `effects` `iot` `maker` `diy` `addressable-led` `color-control`
 
 ---
 
