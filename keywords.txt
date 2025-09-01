@@ -1,0 +1,34 @@
+#######################################
+# Syntax Coloring Map For AvantLumi
+#######################################
+
+# Class
+AvantLumi	KEYWORD1
+
+# Methods
+begin	KEYWORD2
+update	KEYWORD2
+setRGB	KEYWORD2
+setColor	KEYWORD2
+setBright	KEYWORD2
+setSwitch	KEYWORD2
+setFade	KEYWORD2
+setPalette	KEYWORD2
+setBlendSpeed	KEYWORD2
+getRGB	KEYWORD2
+getColor	KEYWORD2
+getBright	KEYWORD2
+getSwitch	KEYWORD2
+getFade	KEYWORD2
+getPalette	KEYWORD2
+getStatus	KEYWORD2
+getBlendSpeed	KEYWORD2
+setMaxPower	KEYWORD2
+getMaxVolts	KEYWORD2
+getMaxMilliamps	KEYWORD2
+saveConfig	KEYWORD2
+loadConfig	KEYWORD2
+checkConfig	KEYWORD2
+
+# Constants (if any, add here)
+# e.g. AVANTLUMI_DEFAULT_BRIGHTNESS	LITERAL1
