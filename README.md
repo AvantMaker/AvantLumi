@@ -8,6 +8,7 @@ Visit us at [AvantMaker.com](https://www.avantmaker.com) where we've crafted a c
 
 ---
 
+![AvantMaker AvantLumi - Get Ready to Shine!!](https://avantmaker.com/wp-content/uploads/2025/09/avantlumi_theme_Image.jpg)
 ## 🌟 Overview
 
 **AvantLumi** is a powerful Arduino library built on top of FastLED that provides an intuitive interface for controlling LED strips with advanced features including:
