@@ -10,7 +10,7 @@
  * Author: AvantMaker <admin@avantmaker.com>
  * Author Website: https://www.AvantMaker.com
  * Date: September 1, 2025
- * Version: 1.0.0
+ * Version: 1.0.1
  * 
  * Hardware Requirements:
  * - ESP32-based microcontroller (e.g., ESP32 DevKitC, DOIT ESP32 DevKit, etc.)
@@ -34,7 +34,7 @@
 
 // LED Configuration
 #define DATA_PIN 2
-#define NUM_LEDS 17
+#define NUM_LEDS 30
 
 // Create an instance of the AvantLumi library
 AvantLumi myLumi(DATA_PIN, NUM_LEDS);
@@ -84,7 +84,7 @@ void loop() {
     // This section controls the sequence of the demo.
     
     // 1. Demonstrate turning the LEDs ON
-    if (currentStep == TURN_ON && millis() - lastStepTime > 2000) {
+    if (currentStep == TURN_ON && millis() - lastStepTime > 5000) {
         Serial.println("\n1. Turning LEDs ON");
         
         // Use setSwitch() to control the on/off state.
@@ -97,7 +97,7 @@ void loop() {
     }
 
     // 2. Demonstrate changing brightness levels (ramping up)
-    if (currentStep == BRIGHTNESS_UP && millis() - lastStepTime > 1000) {
+    if (currentStep == BRIGHTNESS_UP && millis() - lastStepTime > 2000) {
         if (brightness <= 5) {
             Serial.println("2. Setting brightness to level: " + String(brightness));
             
@@ -113,7 +113,7 @@ void loop() {
     }
 
     // 3. Demonstrate changing brightness levels (ramping down)
-    if (currentStep == BRIGHTNESS_DOWN && millis() - lastStepTime > 1000) {
+    if (currentStep == BRIGHTNESS_DOWN && millis() - lastStepTime > 2000) {
         if (brightness >= 1) {
             Serial.println("3. Setting brightness to level: " + String(brightness));
             myLumi.setBright(brightness);
@@ -126,7 +126,7 @@ void loop() {
     }
 
     // 4. Demonstrate turning the fade effect OFF
-    if (currentStep == FADE_OFF && millis() - lastStepTime > 2000) {
+    if (currentStep == FADE_OFF && millis() - lastStepTime > 5000) {
         Serial.println("\n4. Turning Fade Effect OFF");
         
         // Use setFade() to disable the smooth "breathing" effect.
@@ -139,7 +139,7 @@ void loop() {
     }
 
     // 5. Demonstrate turning the fade effect ON
-    if (currentStep == FADE_ON && millis() - lastStepTime > 4000) {
+    if (currentStep == FADE_ON && millis() - lastStepTime > 5000) {
         Serial.println("\n5. Turning Fade Effect ON");
         
         // Re-enable the default fade effect.

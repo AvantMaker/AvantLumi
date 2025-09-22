@@ -1,6 +1,6 @@
 # AvantLumi Library
 
-**README Version 1.0.1** • **Revised: September 1, 2025** • **Author: AvantMaker** • **https://www.AvantMaker.com**
+**README Version 1.0.2** • **Revised: September 22, 2025** • **Author: AvantMaker** • **https://www.AvantMaker.com**
 
 *This project is proudly brought to you by the team at AvantMaker.com.*
 
@@ -11,7 +11,7 @@ Visit us at [AvantMaker.com](https://www.avantmaker.com) where we've crafted a c
 ![AvantMaker AvantLumi - Get Ready to Shine!!](https://avantmaker.com/wp-content/uploads/2025/09/avantlumi_theme_Image.jpg)
 ## 🌟 Overview
 
-**AvantLumi** is a powerful Arduino library built on top of FastLED that provides an intuitive interface for controlling LED strips with advanced features including:
+**AvantLumi** is a powerful ESP32 Arduino library built on top of FastLED that provides an intuitive interface for controlling LED strips with advanced features including:
 
 - **Color Palettes**: Built-in and custom palettes for stunning visual effects
 - **Brightness Control**: 5-level brightness control with smooth transitions
