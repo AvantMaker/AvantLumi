@@ -2,8 +2,8 @@
  * AvantLumi MQTT Control Example
  * 
  * By: AvantMaker.com
- * Date: August, 2025
- * Version: 1.0.1
+ * Date: Sept. 23, 2025
+ * Version: 1.0.2
  * This example demonstrates how to control LED strips using the AvantLumi library
  * with MQTT commands. The LED status is automatically published at regular intervals.
  * 
@@ -38,10 +38,10 @@
  const char* password = "YOUR_WIFI_PASSWORD";
  
  // MQTT Broker settings
- const char* mqtt_server = "your.mqtt.broker.com";
+ const char* mqtt_server = "test.mosquitto.org";
  const int mqtt_port = 1883;
- const char* mqtt_user = "your_mqtt_user";
- const char* mqtt_password = "your_mqtt_password";
+ const char* mqtt_user = "";
+ const char* mqtt_password = "";
  
  // MQTT Topics
  const char* led_control_topic = "avantmaker/avantlumi/control";
